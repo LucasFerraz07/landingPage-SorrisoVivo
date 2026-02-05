@@ -3,146 +3,238 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
     </style>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
     <title>Sorriso Vivo</title>
   </head>
   <body>
-    <header>
-      <img src="images/logoHeader.webp" alt="Logo Sorriso Vivo" />
-      <h2>LF.</h2>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="esquerda">
-          <img
-            src="images/SorrisoVivo-Hero.webp"
-            alt="Logo Principal Sorriso Vivo"
-          />
-        </div>
-        <div class="direita">
-          <p>
-            Atendimento odontológico de qualidade, com cuidado e compromisso com
-            o seu sorriso. Uma clínica pensada para atender você e sua família
-            com simplicidade e confiança.
-          </p>
-          <button>
-            Tratamentos
-            <img src="images/setaButton.svg" alt="Seta do botão Tratamentos" />
-          </button>
-        </div>
-      </section>
-      <section class="SecaoFormacao">
-        <div class="divisao">
-          <svg
-            width="1774"
-            height="141"
-            viewBox="0 0 1774 141"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g clip-path="url(#clip0_5_33)">
-              <path
-                d="M492.499 2.75746C505.829 -2.08045 518.169 -0.199675 530.049 5.65512C537.549 9.34817 545.049 13.1804 553.659 14.772C561.059 16.1395 568.699 16.6333 576.179 17.7271C581.339 18.4823 586.529 19.3357 591.529 20.617C600.279 22.86 604.969 28.0175 605.519 35.4421C606.559 49.4648 600.549 61.1999 587.589 70.4386C563.899 87.3315 530.959 87.849 505.339 73.4681C497.929 69.3092 491.479 64.3564 485.929 58.524C480.629 52.9609 478.399 46.5845 477.109 39.8556C475.569 31.8157 475.269 23.7999 478.589 15.9611C481.049 10.134 485.399 5.5855 492.499 2.75746ZM587.359 49.1321C556.639 63.8339 517.889 52.4721 503.379 38.0064C504.709 37.5511 506.009 37.1074 507.479 36.6037C505.519 35.1519 502.699 35.309 499.779 36.7555C496.349 38.4561 494.689 40.6522 495.459 42.8569C497.069 41.6295 498.579 40.4787 500.359 39.129C508.799 55.5549 523.709 64.7607 545.009 66.54C566.259 68.3151 583.289 62.2275 595.269 47.224C596.619 48.4562 597.989 49.7012 599.499 51.0692C600.549 48.8899 599.299 46.4753 596.269 44.6311C594.769 43.72 593.249 42.2351 590.059 43.9095C591.439 44.5471 592.399 44.9896 593.799 45.6312C591.419 46.9484 589.579 47.9664 587.359 49.1321Z"
-                fill="#32B3E5"
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <header>
+          <img src="images/logoHeader.webp" alt="Logo Sorriso Vivo" />
+          <h2>LF.</h2>
+        </header>
+        <main>
+          <section class="hero">
+            <div class="esquerda">
+              <img
+                src="images/SorrisoVivo-Hero.webp"
+                alt="Logo Principal Sorriso Vivo"
               />
-              <path
-                d="M537.509 120.11C535.869 124.962 534.579 129.711 532.669 134.287C529.479 141.929 523.009 143.118 515.819 137.486C510.129 133.02 506.349 127.418 504.139 121.344C498.039 104.613 492.379 87.7726 486.549 70.9745C485.399 67.6544 484.259 64.3312 483.559 60.8062C484.029 61.3009 484.509 61.7851 484.959 62.2918C493.609 72.1422 503.949 80.3993 517.629 85.4588C529.839 89.9756 542.609 90.568 555.719 89.1798C559.219 88.81 562.829 89.075 566.379 89.2741C567.259 89.3236 568.059 90.2518 568.909 90.7761C568.069 91.3061 567.309 91.9509 566.389 92.3318C565.579 92.6679 564.589 92.7588 563.659 92.8733C553.139 94.1746 546.429 99.3589 542.629 107.194C540.629 111.334 539.239 115.677 537.509 120.11Z"
-                fill="#0253A8"
-              />
-              <path
-                d="M612.689 39.7524C613.019 32.1335 612.789 24.8208 609.079 17.8295C605.829 11.7035 600.159 8.57032 592.229 8.54378C587.499 8.52793 582.749 9.28936 578.029 9.77932C571.729 10.4325 565.459 11.4013 559.129 11.7797C554.359 12.0656 549.939 10.6739 546.219 8.09933C551.009 7.57855 555.869 7.38316 560.509 6.46619C566.859 5.2106 573.059 3.40374 579.319 1.83907C585.119 0.392617 590.999 -0.336928 597.079 0.150919C609.199 1.12401 616.769 6.77689 620.639 15.892C624.489 24.9301 624.489 34.2956 623.309 43.7012C621.169 60.7718 614.899 77.0607 609.179 93.4423C605.219 104.802 601.439 116.235 595.089 126.928C592.569 131.165 589.749 135.233 585.259 138.32C579.229 142.468 573.159 141.839 569.389 136.167C566.829 132.313 565.229 128.018 563.299 123.892C562.049 121.245 561.099 118.502 559.789 115.882C558.239 112.796 556.069 110.078 552.559 108.123C551.539 107.559 551.219 106.164 550.569 105.15C551.809 104.798 553.219 103.959 554.239 104.201C556.109 104.643 558.069 105.471 559.439 106.589C563.619 109.996 566.369 114.194 568.369 118.722C569.479 121.248 570.569 123.784 571.709 126.301C572.229 127.45 572.799 128.595 573.469 129.69C576.259 134.245 579.049 134.607 582.149 130.244C585.529 125.5 588.559 120.48 590.729 115.296C599.159 95.1614 605.999 74.6542 610.639 53.6915C611.639 49.1642 612.009 44.5436 612.689 39.7524Z"
-                fill="#0554A8"
-              />
-              <path
-                d="M1774 46H621M474 46H0.5"
-                stroke="#0D47A1"
-                stroke-opacity="0.4"
-                stroke-width="4"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_5_33">
-                <rect
-                  width="1774"
-                  height="141"
-                  fill="white"
-                  transform="matrix(-1 0 0 1 1774 0)"
+            </div>
+            <div class="direita">
+              <p>
+                Atendimento odontológico de qualidade, com cuidado e compromisso
+                com o seu sorriso. Uma clínica pensada para atender você e sua
+                família com simplicidade e confiança.
+              </p>
+              <button id="botaoContato">
+                Agende sua consulta agora
+                <img
+                  src="images/setaButton.svg"
+                  alt="Seta do botão Tratamentos"
                 />
-              </clipPath>
-            </defs>
-          </svg>
-        </div>
-        <div class="conteudoFormacao">
-          <div class="formacao">
-            <h3>Profissional qualificado para cuidar do seu sorriso</h3>
-            <p>
-              Formado em Odontologia no ano de 2016 pela Universidade Paulista
-              (UNIP), o Doutor Carlos Eduardo Nogueira apresenta atendimento
-              focado em cuidado e conforto do paciente, além de possuir cursos
-              em restauração, clareamento dental e prótese dentária.
-            </p>
+              </button>
+            </div>
+          </section>
+          <section class="SecaoFormacao">
+            <div class="divisao">
+              <svg
+                width="1774"
+                height="141"
+                viewBox="0 0 1774 141"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_5_33)">
+                  <path
+                    d="M492.499 2.75746C505.829 -2.08045 518.169 -0.199675 530.049 5.65512C537.549 9.34817 545.049 13.1804 553.659 14.772C561.059 16.1395 568.699 16.6333 576.179 17.7271C581.339 18.4823 586.529 19.3357 591.529 20.617C600.279 22.86 604.969 28.0175 605.519 35.4421C606.559 49.4648 600.549 61.1999 587.589 70.4386C563.899 87.3315 530.959 87.849 505.339 73.4681C497.929 69.3092 491.479 64.3564 485.929 58.524C480.629 52.9609 478.399 46.5845 477.109 39.8556C475.569 31.8157 475.269 23.7999 478.589 15.9611C481.049 10.134 485.399 5.5855 492.499 2.75746ZM587.359 49.1321C556.639 63.8339 517.889 52.4721 503.379 38.0064C504.709 37.5511 506.009 37.1074 507.479 36.6037C505.519 35.1519 502.699 35.309 499.779 36.7555C496.349 38.4561 494.689 40.6522 495.459 42.8569C497.069 41.6295 498.579 40.4787 500.359 39.129C508.799 55.5549 523.709 64.7607 545.009 66.54C566.259 68.3151 583.289 62.2275 595.269 47.224C596.619 48.4562 597.989 49.7012 599.499 51.0692C600.549 48.8899 599.299 46.4753 596.269 44.6311C594.769 43.72 593.249 42.2351 590.059 43.9095C591.439 44.5471 592.399 44.9896 593.799 45.6312C591.419 46.9484 589.579 47.9664 587.359 49.1321Z"
+                    fill="#32B3E5"
+                  />
+                  <path
+                    d="M537.509 120.11C535.869 124.962 534.579 129.711 532.669 134.287C529.479 141.929 523.009 143.118 515.819 137.486C510.129 133.02 506.349 127.418 504.139 121.344C498.039 104.613 492.379 87.7726 486.549 70.9745C485.399 67.6544 484.259 64.3312 483.559 60.8062C484.029 61.3009 484.509 61.7851 484.959 62.2918C493.609 72.1422 503.949 80.3993 517.629 85.4588C529.839 89.9756 542.609 90.568 555.719 89.1798C559.219 88.81 562.829 89.075 566.379 89.2741C567.259 89.3236 568.059 90.2518 568.909 90.7761C568.069 91.3061 567.309 91.9509 566.389 92.3318C565.579 92.6679 564.589 92.7588 563.659 92.8733C553.139 94.1746 546.429 99.3589 542.629 107.194C540.629 111.334 539.239 115.677 537.509 120.11Z"
+                    fill="#0253A8"
+                  />
+                  <path
+                    d="M612.689 39.7524C613.019 32.1335 612.789 24.8208 609.079 17.8295C605.829 11.7035 600.159 8.57032 592.229 8.54378C587.499 8.52793 582.749 9.28936 578.029 9.77932C571.729 10.4325 565.459 11.4013 559.129 11.7797C554.359 12.0656 549.939 10.6739 546.219 8.09933C551.009 7.57855 555.869 7.38316 560.509 6.46619C566.859 5.2106 573.059 3.40374 579.319 1.83907C585.119 0.392617 590.999 -0.336928 597.079 0.150919C609.199 1.12401 616.769 6.77689 620.639 15.892C624.489 24.9301 624.489 34.2956 623.309 43.7012C621.169 60.7718 614.899 77.0607 609.179 93.4423C605.219 104.802 601.439 116.235 595.089 126.928C592.569 131.165 589.749 135.233 585.259 138.32C579.229 142.468 573.159 141.839 569.389 136.167C566.829 132.313 565.229 128.018 563.299 123.892C562.049 121.245 561.099 118.502 559.789 115.882C558.239 112.796 556.069 110.078 552.559 108.123C551.539 107.559 551.219 106.164 550.569 105.15C551.809 104.798 553.219 103.959 554.239 104.201C556.109 104.643 558.069 105.471 559.439 106.589C563.619 109.996 566.369 114.194 568.369 118.722C569.479 121.248 570.569 123.784 571.709 126.301C572.229 127.45 572.799 128.595 573.469 129.69C576.259 134.245 579.049 134.607 582.149 130.244C585.529 125.5 588.559 120.48 590.729 115.296C599.159 95.1614 605.999 74.6542 610.639 53.6915C611.639 49.1642 612.009 44.5436 612.689 39.7524Z"
+                    fill="#0554A8"
+                  />
+                  <path
+                    d="M1774 46H621M474 46H0.5"
+                    stroke="#0D47A1"
+                    stroke-opacity="0.4"
+                    stroke-width="4"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_5_33">
+                    <rect
+                      width="1774"
+                      height="141"
+                      fill="white"
+                      transform="matrix(-1 0 0 1 1774 0)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <div class="conteudoFormacao">
+              <div class="formacao">
+                <h3>Profissional qualificado para cuidar do seu sorriso</h3>
+                <p>
+                  Formado em Odontologia no ano de 2016 pela Universidade
+                  Paulista (UNIP), o Doutor Carlos Eduardo Nogueira apresenta
+                  atendimento focado em cuidado e conforto do paciente, além de
+                  possuir cursos em restauração, clareamento dental e prótese
+                  dentária.
+                </p>
+              </div>
+              <div class="imgDoutor">
+                <img
+                  src="images/doutor-formacao.webp"
+                  alt="Foto do Doutor Carlos Eduardo Nogueira"
+                />
+              </div>
+            </div>
+          </section>
+          <section class="SecaoTratamentos">
+            <h2>Tratamentos</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img
+                      src="images/icon1-Tratamentos.webp"
+                      alt="Ícone de Segurança"
+                    />
+                    <h3>Clínico Geral</h3>
+                    <p>
+                      Tratamentos odontológicos essenciais para resolver
+                      problemas comuns
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img
+                      src="images/icon2-Tratamentos.webp"
+                      alt="Ícone de Vassoura"
+                    />
+                    <h3>Limpeza e Prevenção</h3>
+                    <p>Cuidados essenciais para a saúde bucal</p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img
+                      src="images/icon3-Tratamentos.webp"
+                      alt="Ícone de Ferramenta"
+                    />
+                    <h3>Restaurações</h3>
+                    <p>Correção de cáries e danos dentários</p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img
+                      src="images/icon4-Tratamentos.webp"
+                      alt="Ícone de Dente"
+                    />
+                    <h3>Ortodontia</h3>
+                    <p>
+                      Correção do alinhamentodos dentes com acompanhamento
+                      profissional
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img
+                      src="images/icon5-Tratamentos.webp"
+                      alt="Ícone de Brilho"
+                    />
+                    <h3>Estética Dental</h3>
+                    <p>
+                      Melhoria da aparência do sorriso com tratamentos seguros e
+                      eficazes
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img
+                      src="images/icon6-Tratamentos.webp"
+                      alt="Ícone de Primeiro Socorros"
+                    />
+                    <h3>Tratamentos de Emergência</h3>
+                    <p>Atendimento rápido e eficaz em situações urgentes</p>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </section>
+        </main>
+
+        <footer>
+          <div class="conteudoFooter">
+            <div class="contato">
+              <h3>Contato</h3>
+              <p>(11) 98765-4321</p>
+              <p>contato@clinicasorrisovivo.com.br</p>
+            </div>
+            <div class="midia">
+              <h3>REDES SOCIAIS</h3>
+              <ul>
+                <li>
+                  <img
+                    src="images/instagram-Footer.webp"
+                    alt="Ícone do Instagram"
+                    id="instagram"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="images/wpp-Footer.webp"
+                    alt="Ícone do WhatsApp"
+                    id="wpp"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="endereco">
+              <h3>Endereço</h3>
+              <p>Rua Dentista, 777 - Vila Dente Branco</p>
+              <p>Cruzeiro - SP</p>
+            </div>
           </div>
-          <div class="imgDoutor">
-            <img
-              src="images/doutor-formacao.webp"
-              alt="Foto do Doutor Carlos Eduardo Nogueira"
-            />
+          <div class="logo">
+            <p>Doutor Carlos Eduardo Nogueira</p>
+            <img src="images/dente-Footer.webp" alt="Logo Sorriso Vivo" />
           </div>
-        </div>
-      </section>
-      <section class="SecaoTratamentos">
-        <h2>Tratamentos</h2>
-        <div class="cards">
-          <div class="card">
-            <img src="images/icon1-Tratamentos.webp" alt="Ícone de Segurança" />
-            <h3>Clínico Geral</h3>
-            <p>
-              Tratamentos odontológicos essenciais para resolver problemas
-              comuns
-            </p>
-          </div>
-          <div class="card">
-            <img src="images/icon2-Tratamentos.webp" alt="Ícone de Vassoura" />
-            <h3>Limpeza e Prevenção</h3>
-            <p>Cuidados essenciais para a saúde bucal</p>
-          </div>
-          <div class="card">
-            <img
-              src="images/icon3-Tratamentos.webp"
-              alt="Ícone de Ferramenta"
-            />
-            <h3>Restaurações</h3>
-            <p>Correção de cáries e danos dentários</p>
-          </div>
-          <div class="card">
-            <img src="images/icon4-Tratamentos.webp" alt="Ícone de Dente" />
-            <h3>Ortodontia</h3>
-            <p>
-              Correção do alinhamentodos dentes com acompanhamento profissional
-            </p>
-          </div>
-          <div class="card">
-            <img src="images/icon5-Tratamentos.webp" alt="Ícone de Brilho" />
-            <h3>Estética Dental</h3>
-            <p>
-              Melhoria da aparência do sorriso com tratamentos seguros e
-              eficazes
-            </p>
-          </div>
-          <div class="card">
-            <img
-              src="images/icon6-Tratamentos.webp"
-              alt="Ícone de Primeiro Socorros"
-            />
-            <h3>Tratamentos de Emergência</h3>
-            <p>Atendimento rápido e eficaz em situações urgentes</p>
-          </div>
-        </div>
-      </section>
-    </main>
+        </footer>
+      </div>
+    </div>
+
+    <!-- BOTAO WHATSAPP -->
     <a
       href="https://wa.me/5511999999999"
       class="whatsapp-float"
@@ -152,43 +244,13 @@
       <img src="images/wpp-Footer.webp" alt="Botão do WhatsApp" />
     </a>
 
-    <footer>
-      <div class="conteudoFooter">
-        <div class="contato">
-          <h3>Contato</h3>
-          <p>(11) 98765-4321</p>
-          <p>contato@clinicasorrisovivo.com.br</p>
-        </div>
-        <div class="midia">
-          <h3>REDES SOCIAIS</h3>
-          <ul>
-            <li>
-              <img
-                src="images/instagram-Footer.webp"
-                alt="Ícone do Instagram"
-                id="instagram"
-              />
-            </li>
-            <li>
-              <img
-                src="images/wpp-Footer.webp"
-                alt="Ícone do WhatsApp"
-                id="wpp"
-              />
-            </li>
-          </ul>
-        </div>
-        <div class="endereco">
-          <h3>Endereço</h3>
-          <p>Rua Dentista, 777 - Vila Dente Branco</p>
-          <p>Cruzeiro - SP</p>
-        </div>
-      </div>
-      <div class="logo">
-        <p>Doutor Carlos Eduardo Nogueira</p>
-        <img src="images/dente-Footer.webp" alt="Logo Sorriso Vivo" />
-      </div>
-    </footer>
-    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
+
+    <script src="src/js/scripts.js"></script>
   </body>
 </html>
