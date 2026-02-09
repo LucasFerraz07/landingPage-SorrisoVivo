@@ -113,3 +113,11 @@ grupoSplit.forEach((element) => {
 });
 
 
+// Abre o WhatsApp ao clicar no botão de contato
+const botaoContato = document.getElementById('botaoContato');
+if (botaoContato) {
+  botaoContato.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.open('https://wa.me/5511999999999', '_blank');
+  });
+}
