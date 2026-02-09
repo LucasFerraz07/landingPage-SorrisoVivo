@@ -137,7 +137,7 @@ header{
         align-items: center;
         justify-content: space-between;
         gap: 5vw;
-        margin-bottom: 6vw;
+        margin-bottom: 4vw;
         padding: 0 8vw;
 
         .formacao{
@@ -174,7 +174,7 @@ header{
     align-items: center;
     h2{
         font-size: 40px;
-        padding: 4vw;
+        padding: 2vw;
     }
     .card{
             background-color: white;
@@ -213,7 +213,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10vh;
+    margin-top: 20vh;
 
     .logo{
         width: 100%;
